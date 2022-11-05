@@ -8,6 +8,7 @@ public class Main {
         System.out.println(checkCredentials("login","password/","password/"));
         System.out.println(checkCredentials("login.","password","password"));
     }
+
     public static boolean checkCredentials(String login,String password,String confirmPassword){
         try {
             return CredentialsValidator.validateCredentials(login, password, confirmPassword);
